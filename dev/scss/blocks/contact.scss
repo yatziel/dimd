@@ -1,0 +1,23 @@
+.whatsapp {
+	display: block;
+	position:fixed;
+	bottom: 70;
+	right: 100;
+	@include mobile {
+		bottom: 30;
+		right: 30;
+	}
+	@include laptop {
+		bottom: 40;
+		right: 40;
+	}
+}
+.whatsapp img {
+	width: 100px;
+	@include transition;
+}
+
+.whatsapp img:hover {
+	width: 120px;
+	@include transition;
+}

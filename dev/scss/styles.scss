@@ -1,0 +1,25 @@
+//Configuración guias de estilo
+@import "config/colors";
+@import "config/fonts";
+
+//Mixins
+@import "mixins/breakpoints";
+@import "mixins/reset-list";
+@import "mixins/transitions";
+
+//Estilos base
+@import "basics/normalize";
+@import "basics/base";
+@import "basics/headings";
+
+// Bloques
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/modules";
+@import "blocks/teachers";
+@import "blocks/divider";
+@import "blocks/promos";
+@import "blocks/form";
+@import "blocks/contact";
+@import "blocks/footer";
+// Pages

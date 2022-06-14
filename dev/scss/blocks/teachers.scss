@@ -1,0 +1,110 @@
+.teachers-grid {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,1fr);
+	justify-content: center;
+	align-items : stretch;
+	grid-gap: .5rem;
+	@include tablet {
+		width: 90%;
+		margin: 0 auto;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(4,1fr);
+	}
+	@include mobile {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+}
+
+.teachers-items {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 1rem;
+	box-sizing: border-box;
+	// position: relative;
+	// overflow: hidden;
+	// cursor: pointer;
+}
+
+.teachers-front,
+.teachers-back {
+	height: 100%;
+}
+
+.teachers-front {
+	/* background-color: $primary-color; */
+}
+
+.teachers-back {
+	// position:absolute;
+	// left: 0;
+	box-sizing: border-box;
+/* 	background-color: $acent-color; */
+	padding: 1rem;
+	opacity: 0;
+	@include transition;
+	@include mobile{
+		padding: 2rem;
+	}
+} 
+
+.teachers-items:hover .teachers-back {
+	opacity: 1;
+	top: 0;
+}
+
+.teachers-image img {
+	width: 70%;
+}
+.teachers-info {
+	text-align: center;
+}
+.teachers-info h3 {
+	margin: .7rem 0; 
+	font-size: 1rem;
+	color: $dark-color;
+}
+.teachers-info span {
+	display: block;
+	width: 80%;
+	font-size: .8rem;
+	margin: 0 auto;
+	padding: .5rem;
+	opacity: .6;
+	
+}
+
+.teachers-back p {
+	font-size: .85rem;
+	line-height: 1.3rem;
+	margin: 0;
+	vertical-align: middle;
+	@include tablet{
+		font-size: 1rem;
+	}
+	@include mobile{
+		font-size: 1.3rem;
+		line-height: 2rem;
+	}
+}
+
+.teachers-front i {
+	font-size: 1.4rem;
+	color: $green-color;
+	@include mobile {
+		font-size: 3rem;
+	}
+}
+.teachers-front i a {
+
+	padding-left: .5rem;
+	position: relative;
+	top: -2px;
+	color: $green-color;
+	@include mobile {
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+}

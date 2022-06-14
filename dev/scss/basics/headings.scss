@@ -1,0 +1,47 @@
+h1,h2,h3,h5,h6 {
+	font-family: $font;
+}
+
+h1 {
+	font-size: 2.6rem;
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+h2 {
+	font-size: 2rem;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+h3 {
+	margin: 0;
+	margin-bottom: 1rem;
+	font-weight: 600;
+}
+
+
+h4 {
+	margin: 0;
+	font-family: $font;
+}
+
+p {
+	font-size: 1.2rem;
+	line-height: 2rem;
+	font-weight: 200;
+}
+
+i {
+	font-size: 1.25rem;
+}
+
+a {
+	text-decoration: none;
+	font-family: $font;
+	font-weight: 700;
+	font-size: .8rem;
+}

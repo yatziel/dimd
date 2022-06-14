@@ -1,0 +1,29 @@
+body {
+	font-family: $font;
+	color: $dark-color;
+	background-color: $light-color;
+	font-size: 1em;
+}
+
+ul {
+	@include reset-list;
+}
+
+header,
+.modules,
+.divider,
+footer {
+	background-color: $dark-color;
+	color: $light-color;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 4rem 0;
+	max-width: 960px;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+}

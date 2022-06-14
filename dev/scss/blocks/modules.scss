@@ -1,0 +1,92 @@
+.modules-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(4,1fr);
+	justify-content: center;
+	align-items : stretch;
+	grid-gap: .5rem;
+	@include tablet{
+		width: 90%;
+		margin: 0 auto;
+		grid-template-columns: 1fr;
+	}
+}
+
+.modules-items {
+	width: 100%;
+	height: auto;
+	background-color: $dark-color;
+	position: relative;
+	overflow: hidden;
+}
+
+.modules-front,
+.modules-back {
+	height: 100%;
+}
+
+.modules-front {
+	display: flex;
+	filter: blur(0px);
+	opacity: 1;
+
+}
+
+.modules-back {
+	position:absolute;
+	left: 0;
+/* 	background-color: $acent-color-alpha; */
+	opacity: 0;
+	padding: 1rem;
+	@include transition;
+	@include mobile {
+		padding: .5rem;
+	}
+}
+/* .modules-items:hover .modules-back {
+	opacity: 1;
+	top: 0;
+
+}
+.modules-items:hover .modules-front {
+	filter: blur(20px);
+	opacity: .5;
+}
+ */
+.modules-image,
+.modules-info {
+	width: 100%;
+	align-self: center;
+	box-sizing: border-box;
+}
+
+.modules-image img {
+	width: 100%;
+}
+
+.modules-info{
+	padding: 0 1rem;
+	position: absolute;
+}
+.modules-info p {
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: $light-color;
+	background-color: $green-color;
+	margin: 0;
+	display: inline;
+	padding: .25rem;
+	font-weight: bold;
+}
+.modules-back p {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	margin: 0;
+}
+
+.modules-info h3 {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}

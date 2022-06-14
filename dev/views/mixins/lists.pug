@@ -1,0 +1,8 @@
+mixin item(icon,prefix,text,subtext)
+	li.header-list-item
+		i.list-icon(class=icon)
+		p.list-text
+			span.green= prefix
+			span= text
+			br
+			small.red= subtext

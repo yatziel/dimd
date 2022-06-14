@@ -1,0 +1,14 @@
+.container
+	h2 Programa
+	.modules-grid
+		each value, index in modules
+			.modules-items
+				.modules-front
+					.modules-image
+						img(src="assets/images/modules/"+`${value.photo}`+".png", alt="Imagen "+`${value.name}`)
+					.modules-info
+						p= `Módulo ${index+1}`
+						h3(class=`${value.color}`)= value.name
+						//- h4= `Por ${value.teacher}`
+				.modules-back(class=`${value.background}`)
+					//- p= value.description

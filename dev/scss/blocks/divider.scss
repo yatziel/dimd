@@ -1,0 +1,51 @@
+.divider {
+	/* background-image: url('../assets/images/backgrounds/back-divider.png'); */
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.divider .container {
+	width: 90%;
+	margin: 0 auto;
+	text-align: left;
+	@include tablet {
+		text-align: center;
+	}
+}
+.divider p,
+.divider a {
+	display: inline-block;
+	vertical-align: middle;
+	@include tablet {
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+.divider p {
+	width: 60%;
+	font-size: 1.5rem;
+}
+
+.divider a {
+	text-align: center;
+	padding: 1rem;
+	box-sizing: border-box;
+	width: 220px;
+	height: 60px;
+	border: 1px solid $green-color;
+	margin-left: 2rem;
+	color: $light-color;
+	font-size: 1.2rem;
+	font-weight: 600;
+	@include transition;
+	&:hover {
+		background-color: $purple-color;
+		border: 1px solid $purple-color;
+	}
+	@include tablet {
+		margin: 0 auto;
+		margin-top: 1.25rem;
+	}
+}

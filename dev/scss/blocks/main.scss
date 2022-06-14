@@ -1,0 +1,35 @@
+.main-container {
+	text-align: center;
+}
+
+.main-highlights {
+	margin: 3rem auto;
+}
+
+
+.main-highlights li {
+	width: 80%;
+	height: 130px;
+	display: flex;
+	padding: 1rem;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1rem;
+	background-color: $dark-color;
+	box-sizing: border-box;
+}
+
+.main-highlights li p i { 
+	font-size: 3rem;
+	color: $green-color;
+	width: 80px;
+	margin-right: 1rem;
+	text-align: center;
+}
+
+.main-highlights li p {
+	color: $light-color;
+	font-size: 1rem;
+	line-height: 140%;
+}

@@ -1,0 +1,60 @@
+footer .container {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	@include tablet   {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+footer .container div {
+	width: 33%;
+	@include tablet   {
+		width: 90%;
+	}
+}
+
+.asmedia img,
+.diplomado img{
+	width: auto;
+	max-width: 200px;
+}
+
+footer .info li,
+footer .asmedia .continua {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	align-items: flex-start;
+	margin: 1rem 0;
+}
+
+footer .continua i, 
+footer .info i {
+	display: block;
+	width: 40px;
+	padding-top: .3rem;
+	text-align: center;
+}
+
+footer .continua p,
+footer .info a {
+	padding-left: .5rem;
+	color: $green-color;
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 2rem;
+	margin: 0;
+	padding: 0;
+}
+
+footer .diplomado img {
+	max-width: 160px ;
+	margin: 0 auto;
+	@include tablet {
+		display: block;
+	}
+}

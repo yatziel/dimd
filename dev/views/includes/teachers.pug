@@ -1,0 +1,17 @@
+.container
+	h2 Instructores
+	.teachers-grid
+		each value in teachers
+			.teachers-items
+				.teachers-front(class=`${value.background}`)
+					.teachers-image
+						img(src="assets/images/teachers/"+`${value.photo}`+".png", alt="Fotografía "+`${value.name}`)
+					.teachers-info
+						h3= value.name
+						a(href=value.link, target="_blank")
+							i.fab.fa-linkedin-in
+						//- span= value.title
+				//- .teachers-back(class=`${value.background}`)
+				//- 		//- p= value.about
+				//- 		i.fab.fa-linkedin
+				//- 			a(href=value.link, target="_blank")= value.instagram

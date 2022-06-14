@@ -1,0 +1,37 @@
+include ../config/config
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv='cache-control' content='no-cache')
+		meta(http-equiv='expires' content='0')
+		meta(http-equiv='pragma' content='no-cache')
+		link(rel="stylesheet", href="css/styles-min.css")
+		//- Fontawesome
+		script(src="https://kit.fontawesome.com/1bd7ea1dfd.js" crossorigin="anonymous")
+		//- Favicon
+		//- include ../config/favicon
+		//- Analytics
+		include ../config/analytics
+		include ../config/facebook
+		title DIMD • Diplomado Internacional de Marketing Digital
+	body
+		header
+			block header
+		main
+			block main
+			.modules
+				block modules
+			.teachers
+				block teachers
+			.divider
+				block divider
+			.promos
+				block promos
+			.form
+				block form
+			.contact
+				block contact
+		footer
+			block footer
